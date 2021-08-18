@@ -89,9 +89,7 @@ pipeline {
 	                sh '''
 	                make update-debian
 	                dh clean
-	                dh_prep
-	                dh_dkms
-	                
+	                dh build
 	                fakeroot dh binary
 	                '''
                 }
