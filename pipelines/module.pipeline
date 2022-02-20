@@ -3,7 +3,7 @@ def BUILD_DIR = "undefined"
 
 pipeline {
      agent {
-                label 'pizero'
+                label 'pi3 && debhelper && dkms'
             }
 
     stages {
